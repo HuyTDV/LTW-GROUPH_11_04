@@ -1,0 +1,400 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  margin-top: 120px;
+}
+
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  position: fixed; /* Giữ header cố định khi cuộn */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.menu {
+  position: static;
+}
+
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid rgb(200 202 203);
+  margin-bottom: 60px;
+}
+
+
+.logo img {
+  height: 80px;
+}
+
+
+.menu {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  margin-bottom: 15px;
+}
+
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+.menu ul li a:hover {
+  color: red;
+}
+
+
+.menu {
+  flex: 1;
+}
+
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+}
+
+
+.banner-text {
+  font-size: 30px;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.banner-text h1:hover {
+  color: red;
+}
+
+
+.banner-text p:hover {
+  color: red;
+}
+
+
+.quick-links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+  margin-top: 45px;
+}
+
+
+.quick-links .link {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.quick-links .icon {
+  width: 60px;
+  height: 60px;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 24px;
+  margin: 0 auto 10px auto;
+
+}
+
+
+.quick-links p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* Models Section */
+.models {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.models h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+.models-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.models-grid .model p:hover {
+  color: red;
+}
+
+
+.explore-grid .explore-item p:hover {
+  color: red;
+}
+
+
+.model {
+  text-align: center;
+  width: 290px;
+}
+
+
+.model p {
+  font-size: 22px;
+  margin-top: 0px;
+}
+
+
+.model img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.model-image:hover .model-price {
+  opacity: 1;
+}
+
+
+.model-image:hover .model-price {
+  opacity: 1;
+}
+
+
+/* Models Section */
+.model img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.model img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+.model-image:hover .model-price {
+  opacity: 1;
+}
+
+
+/* Explore Section */
+.explore-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.explore-item img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+
+.model-image:hover .model-price {
+  opacity: 1;
+}
+
+
+/* Explore Section */
+.explore {
+  padding: 20px;
+  text-align: center;
+}
+
+
+.explore h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+
+.explore p {
+  font-size: 22px;
+}
+
+
+.explore-grid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+
+.explore-item {
+  width: 350px;
+}
+
+
+.explore-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px 40px;
+  font-size: 14px;
+  margin-left: 8%;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+.footer-section {
+  flex: 1;
+}
+
+
+.contact-info {
+  text-align: left;
+}
+
+
+.contact-info h4,
+.contact-info h5 {
+  margin: 10px 0;
+  color: #000;
+}
+
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+
+.social-links {
+  text-align: right;
+}
+
+
+.share-panel .share-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 18%;
+  font-size: 20;
+}
+
+
+.share-panel .share-button:hover {
+  color: red;
+}
+
+
+.social-media p {
+  margin: 20px 0 10px;
+  color: #666;
+  margin-right: 18%;
+}
+
+
+.social-media a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  font-size: 30px;
+  margin-right: 1%;
+  color: blue;
+}
+
+
+.footer p:hover {
+  color: red;
+}
+
+
+.footer h4:hover {
+  color: red;
+}
+
+
+.footer h5:hover {
+  color: red;
+}
+
+
+.footer a:hover {
+  color: red;
+}
