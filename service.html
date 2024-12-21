@@ -1,0 +1,312 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Car Service</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .main-image img {
+  width: 100%; /* Set to 80% of the parent container's width */
+  height: auto; /* Maintain the aspect ratio */
+  margin-top: 50px; /* Center the image horizontally */
+}
+
+    .content h2 {
+      text-align: center;
+      font-size: 26px;
+      margin: 20px 0;
+    }
+    .content p {
+      text-align: center;
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    .service img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    .service h3 {
+      font-size: 20px;
+      margin-botom: 10px;
+    }
+    .service h4 {
+        font-size: 18px;
+        
+    }
+    .service p {
+      font-size: 16px;
+    }
+   
+     
+   /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+
+body {
+  margin-top: 120px; /* Tạo khoảng trống để tránh nội dung bị che bởi header */
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Xếp chồng logo và menu */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  background-color: white;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  position: fixed; /* Giữ header cố định khi cuộn */
+  top: 0; /* Cố định ở cạnh trên */
+  width: 100%; /* Đảm bảo header phủ toàn bộ chiều rộng */
+  z-index: 1000; /* Đảm bảo header nằm trên các thành phần khác */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng để nổi bật hơn */
+}
+
+.menu {
+  position: static; /* Đảm bảo menu nằm đúng vị trí bên trong header */
+}
+
+ hr{
+  width: 80%; 
+  margin: 0 auto;
+  border: none; 
+  border-top: 1px solid rgb(200 202 203); 
+  margin-bottom:60px;
+}
+
+.logo img {
+  height: 80px; 
+}
+
+
+.menu {
+  position: absolute; /* Đặt menu phía dưới logo */
+  bottom: 0; /* Gắn sát cạnh dưới */
+  left: 40px; /* Căn sang trái */
+  margin-bottom:15px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.menu ul li a:hover {
+  color: red;
+}
+
+.menu {
+  flex: 1; /* Menu chiếm khoảng trống phía bên trái */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px 40px;
+  font-size: 14px;
+  margin-left: 8%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h4, .contact-info h5 {
+  margin: 10px 0;
+  color: #000;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  text-align: right;
+}
+
+.share-panel .share-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 18%;
+  font-size: 20;
+}
+
+.share-panel .share-button:hover {
+  color: red;
+}
+
+.social-media p {
+  margin: 20px 0 10px;
+  color: #666;
+  margin-right: 18%;
+}
+
+
+.social-media a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  font-size: 30px;
+  margin-right: 1%;
+  color: blue;
+}
+
+
+
+
+.footer p:hover{
+  color: red;
+}
+.footer h4:hover{
+  color: red;
+}
+.footer h5:hover{
+  color: red;
+}
+.footer a:hover{
+  color: red;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+   <!-- Header -->
+   <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="./picture/logo.png" alt="Porsche Logo">
+      </a>
+     
+    </div>
+    <hr>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="newcar.html">Xe mới</a></li>
+        <li><a href="cacdongxe.html">Các dòng xe</a></li>
+        <li><a href="#">Khám phá</a></li>
+        <li><a href="service.html">Dịch vụ</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Image -->
+  <div class="main-image">
+    <img src="https://porsche-vietnam.vn/wp-content/uploads/2016/08/banner-dich-vu-1600x615.png" alt="Main Image"/>
+  </div>
+
+  <!-- Content -->
+  <div class="content container">
+    <h2>CHƯƠNG TRÌNH ƯU ĐẠI HẬU MÃI </h2>
+    <p>Hãy luôn cập nhật tin tức và sự kiện mới nhất cũng như hình ảnh và videos của Porsche Việt Nam tại đây </p>
+
+    <div class="service row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="https://porsche-vietnam.vn/wp-content/uploads/2023/04/APA1-headbanner-521x384.jpeg" alt="Red Car"/>
+      </div>
+      <div class="col-md-6">
+        <h3>DỊCH VỤ BÁN HÀNG</h3>
+        <h4>Chúng tôi đem đến sự những tiêu chuẩn cao cấp. Cùng như bạn.</h4>
+        <p>Bạn muốn điều gì đó thật đặc biệt. Đó là lí do tại sao bạn lái một chiếc Porsche. Và tại sao bạn xứng đáng nhận được một dịch vụ đặc biệt tương xứng. Tinh tế, chuyên nghiệp và cực kỳ mạnh mẽ. Trên tất cả: dành riêng cho yêu cầu chính xác của bạn. Đó chính là chuẩn Porsche.</p>
+      </div>
+    </div>
+
+    <div class="service row align-items-center mb-5">
+      <div class="col-md-6"><img src="https://porsche-vietnam.vn/wp-content/uploads/2023/03/Porsche-Centre-Saigon-Sales-services-300323-521x384.jpeg" alt="Showroom"/>
+      </div>
+      <div class="col-md-6">
+        <h3>DỊCH VỤ HẬU MÃI</h3>
+        <h4>Tất cả dành cho chiếc Porsche của bạn.</h4>
+        <p>Chúng tôi luôn sẵn sàng hỗ trợ bạn trong mọi tình huống. Dịch vụ hậu mãi của chúng tôi đảm bảo rằng chiếc Porsche của bạn luôn trong tình trạng tốt nhất.</p>
+      </div>
+    </div>
+
+    <h2>TÌM HIỂU THÊM</h2>
+    <p>Chương Trình Lễ Giới Thiệu Mẫu | Dịch Vụ Bán Hàng | Dịch Vụ Hậu Mãi</p>
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <h4>Thông tin liên lạc:</h4>
+        <h5><strong>Porsche Việt Nam</strong></h5>
+        <p>Liên hệ chung: <a href="mailto:info@porsche-vietnam.com">info@porsche-vietnam.com</a></p>
+        <p>Dịch vụ Khách hàng: <a href="mailto:crm@porsche-vietnam.com">crm@porsche-vietnam.com</a></p>
+        <h5><strong>Các Trung Tâm Porsche</strong></h5>
+        <p><a href="#">Trung Tâm Porsche Sài Gòn</a></p>
+        <p><a href="#">Trung Tâm Porsche Hà Nội</a></p>
+        <p><a href="#">Porsche Studio Hà Nội</a></p>
+      </div>
+      <div class="footer-section social-links">
+        <div class="share-panel">
+          <button class="share-button">Chia sẻ trang</button>
+        </div>
+        <div class="social-media">
+          <p>Kết nối với <strong>Porsche</strong></p>
+          <p>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </p>
+        </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

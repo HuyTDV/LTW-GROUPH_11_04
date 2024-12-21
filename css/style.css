@@ -1,0 +1,295 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    margin-top: 120px;
+  }
+  
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    position: fixed; /* Giữ header cố định khi cuộn */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .menu {
+    position: static;
+  }
+  
+  
+  hr {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid rgb(200 202 203);
+    margin-bottom: 60px;
+  }
+  
+
+
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  
+  .menu {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    margin-bottom: 15px;
+  }
+  
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  .menu ul li a:hover {
+    color: red;
+  }
+  
+  
+  .menu {
+    flex: 1;
+  }
+  
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  
+  .menu ul li {
+    margin-right: 20px;
+  }
+
+ 
+/* css */
+
+.new-cars-content {
+    margin-top: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 10px; /* Thêm khoảng cách hai bên */
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước khối */
+}
+
+.new-car_item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; /* Giới hạn chiều rộng tối đa của mục */
+    margin: 0 auto; /* Căn giữa nội dung khi có khoảng trống hai bên */
+}
+
+._left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+._left img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+._right {
+    flex: 2;
+    padding-left: 20px;
+}
+
+._title ._hightlight a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+._title ._hightlight a:hover {
+    color: #d12028;
+}
+
+.the-content-new-car table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.the-content-new-car table td {
+    padding: 10px 5px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+}
+
+.techspecs-caption {
+    font-weight: bold;
+    color: #555;
+}
+
+.techspecs-pdk {
+    color: #333;
+}
+
+.m-132-button-bar a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #d12028;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.m-132-button-bar a:hover {
+    background-color: #a01020;
+}
+
+
+
+
+
+
+ /* Footer */
+.footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 40px;
+    font-size: 14px;
+    margin-left: 8%;
+  }
+  
+
+  .footer hr{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid rgb(200 202 203);
+    margin-bottom: 60px;
+    margin-top: 80px;
+}
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  
+  .contact-info h4,
+  .contact-info h5 {
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .social-links {
+    text-align: right;
+  }
+  
+  
+  .share-panel .share-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 19%;
+    font-size: 20;
+  }
+  
+  
+  .share-panel .share-button:hover {
+    color: red;
+  }
+  
+  
+  .social-media p {
+    margin: 20px 0 10px;
+    color: #666;
+    margin-right: 18%;
+  }
+  
+  
+  .social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    font-size: 30px;
+    margin-right: 1%;
+    color: blue;
+  }
+  
+  
+  .footer p:hover {
+    color: red;
+  }
+  
+  
+  .footer h4:hover {
+    color: red;
+  }
+  
+  
+  .footer h5:hover {
+    color: red;
+  }
+  
+  
+  .footer a:hover {
+    color: red;
+  }

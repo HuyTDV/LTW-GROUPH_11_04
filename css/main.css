@@ -154,9 +154,21 @@ hr {
 }
 
 
-.quick-links p {
+  .quick-links a {
+    color: white; 
+    text-decoration: none; 
+  }
+
+
+  .quick-links a:hover {
+    color: red; 
+  }
+
+
+.quick-links p a{
   margin: 0;
-  font-size: 14px;
+  color: black;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -352,7 +364,7 @@ hr {
   padding: 10px 15px;
   border: none;
   cursor: pointer;
-  margin-right: 18%;
+  margin-right: 19%;
   font-size: 20;
 }
 
@@ -398,3 +410,4 @@ hr {
 .footer a:hover {
   color: red;
 }
+

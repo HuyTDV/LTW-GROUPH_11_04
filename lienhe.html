@@ -1,0 +1,451 @@
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính Sách Quyền Riêng Tư</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+      /* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+
+body {
+  margin-top: 120px; /* Tạo khoảng trống để tránh nội dung bị che bởi header */
+}
+
+header {
+  display: flex;
+  flex-direction: column; /* Xếp chồng logo và menu */
+  align-items: center; /* Căn giữa theo chiều ngang */
+  background-color: white;
+  padding-top: 20px;
+  color: rgb(0, 0, 0);
+  position: fixed; /* Giữ header cố định khi cuộn */
+  top: 0; /* Cố định ở cạnh trên */
+  width: 100%; /* Đảm bảo header phủ toàn bộ chiều rộng */
+  z-index: 1000; /* Đảm bảo header nằm trên các thành phần khác */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng để nổi bật hơn */
+}
+
+.menu {
+  position: static; /* Đảm bảo menu nằm đúng vị trí bên trong header */
+}
+
+ hr{
+  width: 80%; 
+  margin: 0 auto;
+  border: none; 
+  border-top: 1px solid rgb(200 202 203); 
+  margin-bottom:60px;
+}
+
+.logo img {
+  height: 80px; 
+}
+
+
+.menu {
+  position: absolute; /* Đặt menu phía dưới logo */
+  bottom: 0; /* Gắn sát cạnh dưới */
+  left: 40px; /* Căn sang trái */
+  margin-bottom:15px;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.menu ul li a:hover {
+  color: red;
+}
+
+.menu {
+  flex: 1; /* Menu chiếm khoảng trống phía bên trái */
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+ /* CSS cho thanh tìm kiếm */
+ .search-bar {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 15px;
+  width: 250px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  flex: 1;
+  background: transparent;
+  color: #333;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+}
+
+.search-bar button {
+    background: none;
+  border: none;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  color: #007bff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #007bff;
+}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            width:100%;
+            margin: 140px 0 0 0;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        /* Footer */
+.footer {
+  background-color: #ffffff;
+  color: #333;
+  padding: 20px 40px;
+  font-size: 14px;
+  margin-left: 8%;
+}
+
+.footer hr{
+  width: 80%;
+  margin: 0 auto;
+  border: none;
+  border-top: 1px solid rgb(200 202 203);
+  margin-bottom: 60px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h4, .contact-info h5 {
+  margin: 10px 0;
+  color: #000;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-links {
+  text-align: right;
+}
+
+.share-panel .share-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 18%;
+  font-size: 20;
+}
+
+.share-panel .share-button:hover {
+  color: red;
+}
+
+.social-media p {
+  margin: 20px 0 10px;
+  color: #666;
+  margin-right: 18%;
+}
+
+
+.social-media a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  font-size: 30px;
+  margin-right: 1%;
+  color: blue;
+}
+.footer p:hover{
+  color: red;
+}
+.footer h4:hover{
+  color: red;
+}
+.footer h5:hover{
+  color: red;
+}
+.footer a:hover{
+  color: red;
+}
+
+
+    </style>
+</head>
+<body>
+   <!-- Navigation Bar -->
+   <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="/porsche03/porche/picture/logo.png" alt="Porsche Logo">
+      </a>
+     
+    </div>
+    <hr>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="newcar.html">Xe mới</a></li>
+        <li><a href="cacdongxe.html">Các dòng xe</a></li>
+        <li><a href="#">Khám phá</a></li>
+        <li><a href="service.html">Dịch vụ</a></li>
+        <li><a href="lienhe.html">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+    <div class="container">
+        <h1>Chính Sách Quyền Riêng Tư</h1>
+        <p>Chúng tôi, Công ty TNHH Xe Hơi Thể Thao Uy Tín, cảm ơn bạn đã ghé thăm trang web chính thức của Porsche Việt Nam cũng như sự quan tâm các bạn dành cho những sản phẩm và công ty chúng tôi. Chúng tôi đề cao sự riêng tư của mọi khách hàng. Vì vậy, chúng tôi nghiêm ngặt thực hiện các biện pháp bảo mật dữ liệu cá nhân.</p>
+        <p>Tại chính sách bảo mật dưới đây, chúng tôi cung cấp thông tin về quá trình xử lý dữ liệu cá nhân tại Porsche và quyền hạn của khách hàng – chủ dữ liệu – khi sử dụng trang web của chúng tôi. Các thông tin về sản phẩm cũng như những dịch vụ cung cấp bởi các công ty khác trực thuộc Porsche Group, xin vui lòng tham khảo chính sách bảo mật của họ.</p>
+        <p>Nếu chúng tôi cung cấp liên kết tới các trang mạng xã hội bên ngoài, các điều khoản được nêu sau đây chỉ áp dụng cho quá trình xử lý dữ liệu cá nhân tại các trang mạng đó nếu chúng thuộc phạm vi trách nhiệm của chúng tôi, và trừ khi họ cung cấp thông tin riêng biệt về chính sách bảo mật dữ liệu cụ thể để hiệu nghiệm ưu tiên.</p>
+        
+        <h2>1. Đơn vị kiểm soát, bảo vệ và xử lý dữ liệu</h2>
+        <div class="contact-info">
+            <p>Công ty TNHH Xe Hơi Thể Thao Uy Tín</p>
+            <p>Lô DVTM-5-6-7, đường số N1 và Lô DVTM-4, Đường số 7<br>
+            Khu Thương mại Nam, Khu Chế Xuất Tân Thuận<br>
+            Phường Tân Thuận Đông, Quận 7, TP. Hồ Chí Minh</p>
+            <p>Liên hệ: info@porsche-vietnam.com</p>
+        </div>
+        
+        <h2>2. Chủ thể của bảo mật dữ liệu</h2>
+        <p>Chủ thể của chính sách bảo mật dữ liệu dưới đây là dữ liệu cá nhân. Dữ liệu cá nhân có nghĩa là bất kể dữ liệu nào liên quan đến một thể nhân đã được xác định hoặc có thể được xác định theo điều lệnh của chủ dữ liệu. Điều này bao gồm các thông tin điển hình như tên, địa chỉ nhà riêng, địa chỉ e-mail, số điện thoại và các dữ liệu thu thập được thông qua quá trình truy cập trang web của chúng tôi, điển hình như thời hạn của phiên truy cập và tuyến đường truy cập qua địa chỉ IP.</p>
+        
+        <h2>3. Thể loại, phạm vi, và mục đích xử lý dữ liệu tự động</h2>
+        <p>Thông thường, khách hàng có thể hoàn toàn truy cập trang web của chúng tôi mà không cần đăng ký. Dù vậy, quá trình xử lý dữ liệu vẫn có thể diễn ra.</p>
+
+        <p>Tổng quan về các dạng, phạm vi, mục đích và cơ sở pháp lý của quá trình xử lý dữ liệu tự động có các yếu tố như sau:</p>
+
+        <h2>3.1  Các điều khoản trang web của chúng tôi</h2>
+        <p>Khi bạn truy cập trang web của chúng tôi qua thiết bị điện tử của bạn, chúng tôi thu thập các dữ liệu sau:</p>
+
+        <ul>
+          <li>Thời gian truy cập</li>
+          <li>Thời lượng sử dụng</li>
+          <li>Loại thiết bị truy cập</li>
+          <li>Hệ điều hành sử dụng</li>
+          <li>Các tính năng thường dùng</li>
+          <li>Số lượng dữ liệu truyền đi</li>
+          <li>Các sự kiện diễn ra</li>
+          <li>URL giới thiệu</li>
+          <li>Địa chỉ IP</li>
+          <li>Tên miền</li>
+      </ul>
+
+      <p>Chúng tôi xử lý những dữ liệu trên dựa theo Điều 6, khoản 1, điểm f của GDPR và cung cấp chúng cho trang web để cải thiện khả năng hoạt động, cũng như để phát hiện và khắc phục lỗi. Bằng cách này, chúng tôi tối ưu hóa nội dung và đảm bảo khả năng dài hạn của trang web cũng như các chức năng kỹ thuật. Khi trang web của chúng tôi được truy cập, quá trình xử lý dữ liệu sẽ tự động diễn ra. Khách hàng sẽ không thể sử dụng trang web của chúng tôi nếu chặn việc cung cấp những dữ liệu trên. Chúng tôi không sử dụng những dữ liệu trên cho mục đích xác định danh tính người dùng.</p>
+
+      <h2>3.2  Cookies</h2>
+      <p>Khi bạn truy cập trang web của chúng tôi, “cookies”, những tập tin nhỏ, có thể được dự trữ trên thiết bị của bạn sẽ cung cấp một phạm vi chức năng toàn diện dành riêng cho bạn, từ đó đơn giản hóa quá trình truy cập trên trang web của chúng tôi cũng như tối ưu hóa nội dung truy cập dành cho bạn. Nếu không đồng ý với quá trình sử dụng “cookies”, bạn có thể ngăn chặn việc chúng được dự trữ trên thiết bị của mình qua cấu hình cài đặt tương ứng trên các trình duyệt, hoặc sử dụng tùy chọn không chấp thuận. Xin lưu ý, việc đó đồng nghĩa rằng các chức năng truy cập cũng như phạm vi nội dung truy cập của bạn trên trang web của chúng tôi cũng sẽ bị giới hạn.</p>
+
+      <h2>4. Các dịch vụ và đề nghị cá nhân</h2>
+      <p>Khách hàng có thể tự nguyện cung cấp thông tin cá nhân hoặc đăng ký các dịch vụ cá nhân qua một vài ứng dụng trên trang web của chúng tôi, điển hình như cửa hàng trực tuyến, thư báo, yêu cầu liên hệ, tư vấn thông tin, tham dự các cuộc thi, dịch vụ trực tuyến, Tạo Cấu Hình Xe, Nếu không đăng ký, một vài dịch vụ nêu trên sẽ không thể sử dụng được hoặc chỉ có thể sử dụng một phần nhỏ các chức năng tổng quát.</p>
+      <h2>Quá trình đăng ký</h2>
+      <p>Các khu vực được đánh dấu bởi dấu “*” là những thông tin thiết yếu để có thể hoàn tất đăng ký, thường bao gồm những nội dung sau: họ và tên, địa chỉ gửi thư và địa chỉ e-mail. Việc đăng ký không thể được hoàn tất nếu thiếu những thông tin thiết yếu. Khi đăng ký, bạn có thể tự nguyện điền thêm những thông tin khác, bao gồm thông tin liên hệ công ty, nghề nghiệp, ngày sinh… Xin lưu ý, những thông tin trên không phải là thông tin thiết yếu để hoàn tất đăng ký và khách hàng hoàn toàn có quyền cung cấp hoặc không cung cấp cho chúng tôi những thông tin trên. Tuy nhiên, trong những trường hợp nhất định, chúng tôi sẽ không thể đáp ứng nhu cầu của các khách hàng một cách toàn diện nhất nếu thiếu những dữ liệu phụ trên.</p>
+      <p>Chúng tôi sẽ sử dụng những dữ liệu cá nhân được bạn cung cấp trong quá trình đăng ký để tạo hồ sơ khách hàng và nhận diện bạn mỗi khi đăng nhập. Các cơ sở pháp lý cho quá trình xử lý dữ liệu trên thuộc Điều 6, khoản 1, điều b của GDPR. Các dữ liệu khác bao gồm cấu hình xe đã tạo qua dịch vụ Tạo Cấu Hình Xe có thể được thu thập và liên kết với hồ sơ cá nhân, dựa trên những dịch vụ khác mà bạn đăng ký. Khi các dịch vụ nêu dưới đây được đăng ký, thông tin cá nhân khác sẽ được thu thập và xử lý (vd: thông tin thanh toán khi thực hiện các đơn đặt hàng) và chia sẻ với bên thứ ba (vd: Porsche Dealerships) để có thể thực hiện và hoàn thành các đơn đăng ký.</p>
+
+      <h2>5.Bảo vệ lợi ích hợp pháp</h2>
+      <p>Quá trình xử lý dữ liệu cá nhân của khách hàng phục vụ mục đích bảo vệ lợi ích hợp pháp của chúng tôi. Ngoại trừ những yếu tố được chỉ ra tại mục giới thiệu dịch vụ cá nhân ở khoản 4, quá trình xử lý dữ liệu diễn ra tại trang web của chúng tôi, hoặc sau khi hoàn thành đơn đăng ký, điển hình để phục vụ những mục đích sau:</p>
+      <ul>
+        <li>Cải thiện khả năng điều hành và bảo vệ hệ thống kỹ thuật cũng như quản lý hệ thống dữ liệu.</li>
+        <li>Cải thiện chất lượng sản phẩm, dịch vụ và bảo dưỡng</li>
+        <li>Xử lý dữ liệu tập trung trên cơ sở nâng cao dịch vụ khách hàng, cũng như các hệ thống thu nhận thông tin phục vụ mục đích bán hàng, từ đó cung cấp cho khách hàng và khách hàng tiềm năng sự hỗ trợ cá nhân.</li>
+        <li>Nghiên cứu nhu cầu và phân khúc khách hàng, ví dụ: tính toán và đánh giá sự tương quan, sở thích và tính tiềm năng, dữ liệu liên quan được xử lý trên cơ sở Điều 6, khoản 1, điểm f của GDPR</li>
+      </ul>
+
+      <h2>6. Sự chấp thuận</h2>
+      <p>Nếu bạn chấp thuận thực hiện các thủ tục xử lý dữ liệu nhất định, sự chấp thuận này luôn liên quan tới một mục đích nhất định bao gồm trong văn bản chấp thuận thực tế. Trong trường hợp trên, dữ liệu sẽ được xử lý dựa trên cơ sở của Điều 6, khoản 1, điểm a của GDPR. Chúng tôi sẽ không thể thực hiện những yêu cầu trong văn bản chấp thuận trừ khi có sự đồng ý của bạn. Bạn có thể rút lại sự chấp thuận tại bất cứ thời điểm nào mà không ảnh hưởng đến tính pháp lý của quá trình xử lý dựa trên sự chấp thuận được đưa ra trước đó.</p>
+      <p>Dựa trên mọi tuyên bố chấp thuận mà bạn có thể đưa ra, những công ty nằm trong danh sách của văn bản chấp thuận có thể sử dụng dữ liệu cho mục đích cụ thể, điển hình như để hỗ trợ cho các khách hàng và khách hàng tiềm năng, và để liên lạc với bạn qua những đơn vị truyền thông bạn cung cấp. Dữ liệu cá nhân chỉ được sử dụng đơn thuần cho mục đích cải thiện trải nghiệm và dịch vụ cho khách hàng tại Porsche, và đảm bảo rằng việc liên lạc cũng như tương tác với bạn mang tính cá nhân và riêng tư nhất có thể.</p>
+      <p>Dạng dữ liệu được sử dụng để cải thiện dịch vụ cá nhân dành riêng cho các khách hàng và khách hàng tiềm năng phụ thuộc vào những dữ liệu thu thập được dựa trên các dịch vụ đăng ký, đơn hàng và tư vấn (ví dụ như khi bạn mua sản phẩm của Porsche) và dạng dữ liệu (ví dụ như dữ liệu về sở thích) được cung cấp bởi bạn tại các điểm liên lạc nhất định (ví dụ như trang web hoặc tại các Trung Tâm Porsche). Phạm vi và mục đích sử dụng của sự chấp thuận phụ thuộc vào phương thức chấp thuận tại từng điểm liên lạc.</p>
+
+      <h2>7. Thu nhận dữ liệu cá nhân</h2>
+      <p>Thu nhận nội bộ: Trong Công ty TNHH Xe Hơi Thể Thao Uy Tín, những cá nhân có quyền truy cập dữ liệu là những người cần chúng để phục vụ các mục đích nêu trên. Thu nhận bên ngoài: Chúng tôi chỉ gửi dữ liệu cá nhân của bạn cho những đối tượng bên ngoài Công ty TNHH Xe Hơi Thể Thao Uy Tín khi đó là điều cần thiết để theo dõi hoặc giải quyết các vấn đề của bạn, nếu bao gồm các tổ chức chính phủ, hoặc khi chúng tôi có sự chấp thuận của bạn để chuyển tiếp dữ liệu đó.</p>
+      <p>Thu nhận bên ngoài có thể bao gồm:</p>
+      <h5>a.Bộ phận xử lý </h5>
+      <p>Dr. Ing. h.c.F. Porsche AG hoặc các công ty con cũng như các nhà cung cấp dịch vụ bên ngoài mà chúng tôi kết hợp để làm dịch vụ, điển hình như trong ngành cơ sở hạ tầng kỹ thuật và bảo dưỡng cung cấp bởi Porsche AG, hoặc sự cung cấp nội dung. Chúng tôi nghiêm ngặt chọn lựa và theo dõi những nhà xử lý này để đảm bảo sự bảo mật thông tin khách hàng. Các nhà cung cấp dịch vụ này chỉ có thể sử dụng dữ liệu ấy để phục vụ các mục đích chúng tôi đã nêu trên và theo sự chỉ đạo của chúng tôi.</p>
+      <h5>b.Cơ quan công quyền </h5>
+      <p>Các cơ quan có thẩm quyền và đơn vị công chúng, chẳng hạn như công tố viên, tòa án hoặc cơ quan tài chính mà chúng tôi phải chuyển dữ liệu cá nhân vì lý do pháp lý. Quá trình chuyển dữ liệu dựa trên cơ sở Điều 6, khoản 1, điểm c của GDPR.</p>
+      <h5>b.Cơ quan tư nhân </h5>
+      <p>Nhà phân phối Porsche và các công ty dịch vụ, đối tác làm ăn, nhà cung cấp dịch vụ hoặc những cá nhân được chuyển dữ liệu dựa trên sự chấp thuận của bạn, phụ vụ mục đích thực hiện hợp đồng với bạn cũng như để bảo vệ lợi ích hợp pháp, điển hình như các Trung Tâm Porsche, ngân hàng, nhà cung cấp của các dịch vụ khác hoặc nhà cung cấp dịch vụ vận tải. Quá trình chuyển dữ liệu dựa trên cơ sở Điều 6, khoản 1, điểm a,b hoặc/và f của GDPR.</p>
+      <h2>8. Thời lượng lưu trữ và xóa bỏ dữ liệu </h2>
+      <p>Nếu điều kiện của các dịch vụ và ưu đãi cá nhân không bao gồm thông tin chi tiết về thời lượng lưu trữ hoặc xóa bỏ dữ liệu, những điều sau sẽ được áp dụng:</p>
+      <p>Chúng tôi chỉ lưu trữ dữ liệu cá nhân trong khoảng thời gian cần thiết nhất định để phục vụ các mục đích nêu trên, hoặc trong trường hợp thông qua sự chấp thuận của bạn, sẽ tới lúc bạn thu hồi sự chấp thuận. Nếu bạn thu hồi sự chấp thuận cho việc xử lý dữ liệu cá nhân của mình, chúng tôi sẽ xóa chúng trừ khi liên quan tới các vấn đề pháp lý mà cần phải xử lý thêm. Đồng thời, chúng tôi cũng sẽ xóa bỏ dữ liệu cá nhân của bạn khi cần tuân theo điều kiện luật pháp.</p>
+      <p>Cùng với những điều kiện cơ bản sau, chúng tôi thường xóa bỏ dữ liệu cá nhân ngay lập tức</p>
+      <ul>
+        <li>sau khi các căn cứ pháp lý ngừng áp dụng và với điều kiện là không có căn cứ pháp lý nào khác được áp dụng (ví dụ: luật thương mại và thời hạn lưu giữ luật thuế). Nếu đúng như vậy, chúng tôi sẽ xóa dữ liệu sau khi các cơ sở pháp lý khác không còn được áp dụng.</li>
+        <li>nếu chúng tôi không còn cần dữ liệu cho mục đích chuẩn bị và thực hiện hợp đồng cũng như mục đích pháp lý và không có căn cứ pháp lý nào khác được áp dụng (ví dụ: luật thương mại và thời gian lưu giữ luật thuế). Nếu trường hợp thứ hai xảy ra, chúng tôi sẽ xóa dữ liệu sau khi các cơ sở pháp lý khác không còn được áp dụng</li>
+        <li>nếu mục đích thu thập dữ liệu không còn được áp dụng và không có căn cứ pháp lý nào khác được áp dụng (ví dụ: luật thương mại và thời hạn lưu giữ luật thuế). Nếu đúng như vậy, chúng tôi sẽ xóa dữ liệu sau khi các cơ sở pháp lý khác không còn được áp dụng.</li>
+      </ul>
+      <h2>9. Quyền lợi của chủ thể dữ liệu </h2>
+      <h5>Quá trình xử lý dữ liệu tác động lên chủ thể dữ liệu, vì vậy, bạn có một vài quyền lợi sau:</h5>
+      <h5 >Quyền truy cập:</h5 ><p>Bạn có truyền nhận lại những thông tin chúng tôi thu thập từ bạn.
+        Dữ liệu di động: Nếu bạn đã cung cấp cho chúng tôi thông tin của mình dựa trên hợp đồng hoặc đơn chấp thuận, bạn có quyền, khi kết hợp với các điều kiện pháp lý, nhận lại dữ liệu bạn đã cung cấp dưới định dạng tiêu chuẩn, có đọc được qua máy hoặc bạn có thể yêu cầu chúng tôi chuyển hóa dữ liệu này đến thiết bị khác.</p>
+        <p>Phản đối việc xử lý dữ liệu trên cơ sở pháp lý về “lợi ích hợp pháp”: Bạn có quyền phản đối bất kỳ lúc nào, trên cơ sở liên quan đến tình huống cụ thể của bạn, việc chúng tôi xử lý dữ liệu của bạn, miễn là sự phản đối này dựa trên cơ sở pháp lý của “lợi ích hợp pháp”. Nếu bạn thực hiện quyền phản đối của mình, chúng tôi sẽ ngừng xử lý dữ liệu của bạn trừ khi chúng tôi có thể - dựa trên các yêu cầu pháp lý - chứng minh lý do chính đáng thuyết phục cho việc tiếp tục xử lý dữ liệu, điều này sẽ ghi đè quyền của bạn.</p>
+        <p>Thu hồi sự chấp thuận: Nếu bạn đã đồng ý cho chúng tôi xử lý dữ liệu của bạn, bạn có thể rút lại sự chấp thuận này bất kỳ lúc nào có hiệu lực trong tương lai. Tính hợp pháp của việc xử lý dữ liệu của bạn vẫn không bị ảnh hưởng cho đến thời điểm thu hồi.</p>
+        <h5>Từ chối sử dụng cookies:</h5><p>Bạn có thể từ chối sử dụng cookies bất cứ lúc nào</p>
+        <h5>Quyền khiếu nại với cơ quan giám sát:</h5><p> Bạn cũng có thể gửi đơn khiếu nại lên cơ quan giám sát có thẩm quyền nếu bạn cho rằng việc xử lý dữ liệu của mình là vi phạm pháp luật. Để làm như vậy, bạn có thể nộp đơn lên cơ quan bảo vệ dữ liệu chịu trách nhiệm về thị trấn/thành phố hoặc quốc gia của bạn hoặc cơ quan bảo vệ dữ liệu có trách nhiệm với chúng tôi.</p>
+        <h5>Liên hệ với chúng tôi:</h5><p> Vui lòng liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi nào về việc xử lý dữ liệu cá nhân, quyền của bạn với tư cách là chủ thể dữ liệu và bất kỳ sự chấp thuận nào mà bạn có thể đã đưa ra. Để thực hiện tất cả các quyền đã đề cập được nêu trước đó, vui lòng liên hệ với lam304n@gmail.com hoặc địa chỉ bưu điện được chỉ định ở trên trong Phần 1. Khi làm như vậy, hãy đảm bảo rằng chúng tôi có thể xác định danh tính bạn.</p>
+        <h2>10. Tích hợp các dịch vụ của bên thứ ba </h2>
+        <p>Các trang web và dịch vụ được thực hiện bởi các nhà cung cấp khác liên kết với trang web của chúng tôi đã và được cấu trúc và cung cấp bởi các bên thứ ba. Chúng tôi không có bất kỳ ảnh hưởng nào đến cấu trúc, nội dung hoặc vai trò của các dịch vụ của bên thứ ba này. Chúng tôi tách biệt rõ ràng với tất cả nội dung trong tất cả các dịch vụ của bên thứ ba được liên kết. Xin lưu ý rằng các dịch vụ của bên thứ ba được liên kết với trang web của chúng tôi có thể tự cài đặt cookies của riêng họ trên thiết bị của bạn hoặc thu thập dữ liệu cá nhân. Chúng tôi không có bất kì nào ảnh hưởng về điều này. Vui lòng liên hệ với nhà cung cấp các dịch vụ của bên thứ ba được liên kết trên theo yêu cầu để biết thông tin liên quan.</p>
+        <p>Các ưu đãi từ các bên thứ ba cũng như các ưu đãi từ các công ty con khác của Porsche và các Đại lý của Porsche được liên kết với trang web của chúng tôi hoặc được tích hợp trong trang web của chúng tôi, chẳng hạn như:</p>
+        <ul>
+          <li>Dịch vụ Tài Chính Porsche (chỉ có tại một vài quốc gia nhất định)</li>
+          <li>Tìm Hiểu Phụ Tùng Nguyên Bản</li>
+          <li>Porsche Tequiptment/ Tìm Kiếm TEQ</li>
+        </ul>
+        <p>Đặc biệt, tên của nhà cung cấp liên quan và người chịu trách nhiệm sẽ được đưa vào thông báo pháp lý và thông tin bảo mật dữ liệu liên quan trên các trang web tương ứng.</p>
+        <h2>11. Trạng thái </h2>
+        <p>Phiên bản mới nhất của chính sách bảo mật này được áp dụng.</p>
+
+     <!-- Footer -->
+  <div class="footer">
+    <hr>
+    <div class="footer-content">
+      <div class="footer-section contact-info">
+        <h4>Thông tin liên lạc:</h4>
+        <h5><strong>Porsche Việt Nam</strong></h5>
+        <p>Liên hệ chung: <a href="mailto:info@porsche-vietnam.com">info@porsche-vietnam.com</a></p>
+        <p>Dịch vụ Khách hàng: <a href="mailto:crm@porsche-vietnam.com">crm@porsche-vietnam.com</a></p>
+        <h5><strong>Các Trung Tâm Porsche</strong></h5>
+        <p><a href="#">Trung Tâm Porsche Sài Gòn</a></p>
+        <p><a href="#">Trung Tâm Porsche Hà Nội</a></p>
+        <p><a href="#">Porsche Studio Hà Nội</a></p>
+      </div>
+      <div class="footer-section social-links">
+        <div class="share-panel">
+          <button class="share-button">Chia sẻ trang</button>
+        </div>
+        <div class="social-media">
+          <p>Kết nối với <strong>Porsche</strong></p>
+          <p>
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</body>
+</html>

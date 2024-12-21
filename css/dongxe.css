@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    margin-top: 120px;
+  }
+  
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    position: fixed; /* Giữ header cố định khi cuộn */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo img {
+    height: 80px;
+  }
+  
+  hr {
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    border-top: 1px solid rgb(200 202 203);
+    margin-bottom: 60px;
+  }
+  
+  .menu {
+    position: static;
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    margin-bottom: 15px;
+    flex: 1;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu ul li {
+    margin-right: 20px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  .menu ul li a:hover {
+    color: red;
+  }
+  
+          .note {
+              color: red;
+              margin: 20px 0;
+              font-size: 0.9rem;
+          }
+  
+          .section-title {
+              margin-top: 20px;
+              font-size: 1.5rem;
+              font-weight: bold;
+          }
+  
+          .car-card {
+              margin-bottom: 20px;
+          }
+  
+          .car-card img {
+              width: 100%;
+              height: auto;
+              border-radius: 5px;
+          }
+  
+          .car-title {
+              font-size: 1rem;
+              margin-top: 10px;
+          }
+  
+          .price {
+              font-size: 1rem;
+              color: #333;
+              margin-bottom: 10px;
+          }
+  
+          .btn-container {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              width: 200px;
+              gap: 5px;
+          }
+  
+          .btn-container a{
+              display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 8px 0;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+          }
+  
+          .btn-container a:hover{
+              background-color: #000;
+              color: #fff;
+          }
+  
+          /* Footer */
+  .footer {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 40px;
+    font-size: 14px;
+    margin-left: 8%;
+  }
+  
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  
+  .contact-info h4,
+  .contact-info h5 {
+    margin: 10px 0;
+    color: #000;
+  }
+  
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .social-links {
+    text-align: right;
+  }
+  
+  
+  .share-panel .share-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-right: 19%;
+    font-size: 20;
+  }
+  
+  
+  .share-panel .share-button:hover {
+    color: red;
+  }
+  
+  
+  .social-media p {
+    margin: 20px 0 10px;
+    color: #666;
+    margin-right: 18%;
+  }
+  
+  
+  .social-media a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    font-size: 30px;
+    margin-right: 1%;
+    color: blue;
+  }
+  
+  
+  .footer p:hover {
+    color: red;
+  }
+  
+  
+  .footer h4:hover {
+    color: red;
+  }
+  
+  
+  .footer h5:hover {
+    color: red;
+  }
+  
+  
+  .footer a:hover {
+    color: red;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      margin-top: 100px;
+    }
+  
+    header {
+      padding: 10px;
+    }
+  
+    .logo img {
+      height: 60px;
+    }
+  
+    hr {
+      width: 90%;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu ul li {
+      margin-right: 0;
+    }
+  }
+  
+  
+  @media (min-width: 769px) and (max-width: 1200px) {
+    .logo img {
+      height: 70px;
+    }
+  
+    hr {
+      width: 85%;
+    }
+  
+    .menu ul {
+      gap: 15px;
+    }
+  }
